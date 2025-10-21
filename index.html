@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM Leads</title>
+    <link rel="icon" href="public/assets/logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 text-slate-900">
+    <main class="flex min-h-screen flex-col items-center justify-center px-4">
+        <div class="max-w-xl rounded-2xl border border-slate-200 bg-white p-10 text-center shadow-xl">
+            <img src="public/assets/logo.svg" alt="CRM Leads" class="mx-auto mb-6 h-16 w-16">
+            <h1 class="text-3xl font-bold text-slate-900">CRM Leads</h1>
+            <p class="mt-4 text-base leading-relaxed text-slate-600">
+                Sistema CRM de leads em PHP + MySQL. Acesse a aplicação completa através do diretório
+                <code class="rounded bg-slate-100 px-2 py-1 text-sm">/public</code> ou configure seu servidor
+                para apontar o document root para <code class="rounded bg-slate-100 px-2 py-1 text-sm">public/</code>.
+            </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-3">
+                <a href="public/" class="rounded bg-indigo-600 px-5 py-2 text-sm font-medium text-white shadow hover:bg-indigo-700 transition">
+                    Acessar Dashboard
+                </a>
+                <a href="sql/schema.sql" class="rounded border border-slate-200 px-5 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 transition">
+                    Ver schema SQL
+                </a>
+                <a href="README.md" class="rounded border border-slate-200 px-5 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 transition">
+                    Guia de instalação
+                </a>
+            </div>
+        </div>
+        <p class="mt-10 text-xs text-slate-400">
+            &copy; <?= date('Y') ?> CRM Leads — Alexandre Dpaula
+        </p>
+    </main>
+</body>
+</html>
